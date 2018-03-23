@@ -308,6 +308,6 @@ func main() {
 	// fmt.Println(string(resultJson))
 
 	resultJson, _ := json.Marshal(result)
-	fmt.Println(jsonPrettyPrint(string(resultJson)))
-	// writeResult(basePath + "/result.json", jsonPrettyPrint(string(resultJson)))
+	// fmt.Println(jsonPrettyPrint(string(resultJson)))
+	writeResult(basePath + "/result.json", jsonPrettyPrint(string(resultJson)))
 }
